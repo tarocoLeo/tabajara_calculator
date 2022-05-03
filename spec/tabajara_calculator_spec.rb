@@ -24,6 +24,12 @@ describe TabajaraCalculator do
     it 'Testar somar 2 com string' do
       tb = TabajaraCalculator.new
       expect(tb.somar("1+2")).to eql(3)
-    end  
+    end
+    
+    it 'Testar somar 4 com string' do
+      tb = TabajaraCalculator.new
+      expect(tb.somar("1+2+3+4")).to eql(10)
+    end
+
   end
 end
