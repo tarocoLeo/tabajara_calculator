@@ -1,5 +1,5 @@
 class TabajaraCalculator
-  def somar(a,b)
-    return a + b
+  def somar(*args)
+    return args.reduce(:+)
   end
 end
